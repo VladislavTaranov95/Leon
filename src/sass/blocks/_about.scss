@@ -1,0 +1,51 @@
+.about {
+    &__logo {
+        margin-top: 92px;
+        text-align: center;
+    }
+
+    &__header {
+        margin-top: -12px;
+        text-align: center;
+    }
+
+    &__content {
+        margin-top: 122px;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__text-content {
+        margin-top: 12px;
+        max-width: 558px;
+    }
+
+    &__text {
+        color: #575757;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 32px;
+        margin-top: 24px;
+
+        &_bold {
+            /* Style for "Lorem ipsu" */
+            color: #334752;
+            font-size: 20px;
+            font-weight: 800;
+            line-height: 40px;
+        }
+    }
+}
+
+.line {
+    width: 271px;
+    height: 2px;
+
+    &_blue {
+        margin-top: 55px;
+        background-color: #10cab7;
+    }
+}

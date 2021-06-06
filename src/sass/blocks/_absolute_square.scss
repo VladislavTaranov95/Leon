@@ -1,0 +1,20 @@
+.figures {
+    position: relative;
+
+    &__services-absolute-square {
+        position: absolute;
+        right: 44px;
+        top: 50px;
+    }
+
+    &__about-absolute-square {
+        position: absolute;
+        right: 127px;
+        top: 15px;
+    }
+
+    &_about {
+        width: 470px;
+        text-align: right;
+    }
+}
