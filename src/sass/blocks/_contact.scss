@@ -1,0 +1,41 @@
+.contact {
+    height: 720px;
+    background-color: #fafafa;
+    margin-top: 155px;
+
+    &__logo {
+        text-align: center;
+        margin-top: 87px;
+    }
+
+    &__header {
+        margin-top: -20px;
+        color: #575757;
+        font-size: 25px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    &__text {
+        margin-top: 152px;
+        color: #2c4755;
+        font-size: 55px;
+        font-weight: 800;
+
+        &_blue {
+            font-size: 50px;
+            color: #10cab7;
+            margin-left: 43px;
+            margin-top: 29px;
+            font-weight: 800;
+        }
+    }
+}
+
+.social-networks {
+    margin-top: 53px;
+    margin-left: 107px;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
