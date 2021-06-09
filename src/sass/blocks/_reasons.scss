@@ -1,8 +1,8 @@
 .reasons {
+    display: flex;
 }
 
 .reason {
-    display: inline-block;
     padding: 86px 0 69px 0;
     width: 33%;
     &-item {
@@ -12,10 +12,14 @@
         justify-content: flex-start;
         align-items: center;
 
+        &__logo {
+            height: 100px;
+        }
+
         &__header {
             margin-top: 50px;
             color: #2c4755;
-            font-size: 20px;
+            font-size: 25px;
             font-weight: 800;
         }
 

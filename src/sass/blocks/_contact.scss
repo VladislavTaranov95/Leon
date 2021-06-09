@@ -1,7 +1,8 @@
 .contact {
     height: 720px;
     background-color: #fafafa;
-    margin-top: 155px;
+    padding-top: 70px;
+
 
     &__logo {
         text-align: center;
@@ -35,7 +36,7 @@
 .social-networks {
     margin-top: 53px;
     margin-left: 107px;
-    width: 350px;
+    max-width: 350px;
     display: flex;
     justify-content: space-between;
 }

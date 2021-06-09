@@ -1,6 +1,7 @@
 .services {
-    margin-top: 70px;
     text-align: center;
+    padding-top: 70px;
+    padding-bottom: 100px;
 
     &__header {
         margin-top: -20px;
@@ -16,7 +17,7 @@
     }
 
     &__items {
-        width: 745px;
+        max-width: 66%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -25,17 +26,18 @@
 }
 
 .item {
-    display: inline-block;
-    width: 50%;
     text-align: left;
+    display: flex;
+    margin-bottom: 46px;
+    width: 50%;
 
     &__icon {
-        margin-top: 3px;
+        margin-top: 5px;
         margin-left: 3px;
     }
 
     &__content {
-        width: 253px;
+        width: 100%;
         margin-left: 50px;
     }
 

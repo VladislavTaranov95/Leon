@@ -1,12 +1,19 @@
 .about {
+    padding-top: 70px;
+    padding-bottom: 150px;
+    
     &__logo {
         margin-top: 92px;
         text-align: center;
     }
 
     &__header {
-        margin-top: -12px;
+        margin-top: -20px;
         text-align: center;
+        /* Style for "Less is mo" */
+        color: #575757;
+        font-size: 25px;
+        font-weight: 400;
     }
 
     &__content {
@@ -21,6 +28,7 @@
     &__text-content {
         margin-top: 12px;
         max-width: 558px;
+        text-align: left;
     }
 
     &__text {
@@ -41,6 +49,7 @@
 }
 
 .line {
+    text-align: left;
     width: 271px;
     height: 2px;
 

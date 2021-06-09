@@ -9,12 +9,18 @@
 
     &__about-absolute-square {
         position: absolute;
-        right: 127px;
+        left: 47px;
         top: 15px;
     }
 
     &_about {
         width: 470px;
         text-align: right;
+    }
+
+    &_about {
+        position: relative;
+        width: 50%;
+        padding-right: 124px;
     }
 }
