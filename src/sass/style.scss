@@ -11,6 +11,49 @@
 
 .logo {
     text-align: center;
+    font-size: 160px;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -4.05px;
+    color: #ebeced;
+}
+
+@media (max-width: 1500px) {
+    .container {
+        max-width: 850px;
+    }
+}
+
+@media (max-width: 980px) {
+
+    .container {
+        max-width: 650px;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .container {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .logo {
+        margin-top: 30px;
+        font-size: 100px;
+    }
+}
+
+@media (max-width: 430px) {
+
+    .container {
+        max-width: 430px;
+    }
+
+    .logo {
+        margin-top: 20px;
+        font-size: 70px;
+    }
 }
 
 @import 'blocks/header';
@@ -23,5 +66,3 @@
 @import 'blocks/about';
 @import 'blocks/contact';
 @import 'blocks/footer';
-
-@import 'media/media';

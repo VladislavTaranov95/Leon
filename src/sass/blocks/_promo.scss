@@ -1,13 +1,13 @@
 .promo {
     height: 460px;
-    background-color: #f6f6f6;
+    background-color: $back_color;
     padding-top: 55.5px;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     &__header {
-        color: #10cab7;
+        color: $first_color;
         font-size: 55px;
         font-weight: 800;
         text-align: center;
@@ -15,11 +15,27 @@
 
     &__subheader {
         max-width: 375px;
-        color: #2c4755;
+        color: $second_color;
         font-size: 20px;
         font-weight: 400;
         text-align: center;
         margin-top: 31px;
         line-height: 1.6;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .promo {
+        padding-top: 25px;
+        height: 230px;
+
+        &__header {
+            font-size: 40px;
+        }
+
+        &__subheader {
+            font-size: 15px;
+        }
     }
 }

@@ -4,8 +4,8 @@
     padding-bottom: 100px;
 
     &__header {
-        margin-top: -20px;
-        color: #575757;
+        margin-top: -58px;
+        color: $color_subheader;
         font-size: 25px;
         font-weight: 400;
     }
@@ -43,15 +43,53 @@
 
     &__header {
         /* Style for "Web Design" */
-        color: #1f2021;
+        color: $text_theme_color;
         font-size: 20px;
         font-weight: 800;
     }
 
     &__text {
         margin-top: 39px;
-        color: #4d4c4c;
+        color: $color_subheader2;
         font-size: 15px;
         font-weight: 400;
+    }
+}
+
+@media (max-width: 1500px) {
+
+    .services {
+        &__items {
+            max-width: 100%;
+            justify-content: space-around;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+
+    .services {
+        padding-top: 30px;
+
+        &__header {
+            font-size: 15px;
+            margin-top: -38px;
+        }
+    }
+}
+
+@media (max-width: 430px) {
+
+    .services {
+        &__header {
+            font-size: 15px;
+            margin-top: -28px;
+        }
+    }
+
+    .item {
+        &__content {
+            margin-left: 15px;
+        }
     }
 }

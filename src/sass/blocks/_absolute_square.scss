@@ -24,3 +24,14 @@
         padding-right: 124px;
     }
 }
+
+@media (max-width: 1500px) {
+
+    .figures {
+        display: none;
+
+        &_about {
+            display: none;
+        }
+    }
+}

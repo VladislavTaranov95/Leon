@@ -18,7 +18,7 @@
 
         &__header {
             margin-top: 50px;
-            color: #2c4755;
+            color: $second_color;
             font-size: 25px;
             font-weight: 800;
         }
@@ -26,7 +26,7 @@
         &__subheader {
             margin-top: 35px;
             width: 269px;
-            color: #575757;
+            color: $color_subheader;
             font-size: 15px;
             font-weight: 400;
             text-align: center;
@@ -36,5 +36,34 @@
 
     &_shadow {
         box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    }
+}
+
+@media (max-width: 980px) {
+
+    .reasons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reason {
+        width: 50%;
+    }
+
+    .item {
+        width: 80%;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .reason {
+        width: 100%;
+    }
+
+    .reason-item {
+        &__header {
+            font-size: 18px;
+        }
     }
 }
