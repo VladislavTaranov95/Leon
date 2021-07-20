@@ -4,14 +4,13 @@
     align-items: center;
     height: 91px;
     position: relative;
+
+    @media (max-width: 430px) {
+        height: 40px;
+    }
 }
 
 .logo__menu {
     position: relative;
 }
 
-@media (max-width: 430px) {
-    .logos {
-        height: 40px;
-    }
-}

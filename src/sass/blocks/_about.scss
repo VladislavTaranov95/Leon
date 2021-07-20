@@ -1,7 +1,7 @@
 .about {
     padding-top: 70px;
     padding-bottom: 150px;
-    
+
     &__logo {
         margin-top: 92px;
         text-align: center;
@@ -46,6 +46,23 @@
             line-height: 40px;
         }
     }
+
+    @media (max-width: 650px) {
+
+        padding-top: 30px;
+
+        &__header {
+            font-size: 15px;
+            margin-top: -38px;
+        }
+    }
+
+    @media (max-width: 430px) {
+        &__header {
+            font-size: 15px;
+            margin-top: -28px;
+        }
+    }
 }
 
 .line {
@@ -56,26 +73,5 @@
     &_blue {
         margin-top: 55px;
         background-color: $first_color;
-    }
-}
-
-@media (max-width: 650px) {
-
-    .about {
-        padding-top: 30px;
-
-        &__header {
-            font-size: 15px;
-            margin-top: -38px;
-        }
-    }
-}
-
-@media (max-width: 430px) {
-    .about {
-        &__header {
-            font-size: 15px;
-            margin-top: -28px;
-        }
     }
 }

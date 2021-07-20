@@ -3,15 +3,13 @@
 }
 
 .menu__btn {
+
     display: flex;
     justify-content: center;
     width: 26px;
     height: 26px;
     cursor: pointer;
     z-index: 1;
-}
-
-.menu__btn {
 
     & span,
     & span::before,
@@ -47,41 +45,40 @@
     text-align: left;
     background-color: #2c4755;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-}
 
-/* элементы меню */
-.menu-box__header {
-    margin-left: 29.5px;
-    margin-bottom: 15px;
-    font-size: 20px;
-    font-weight: normal;
-    color: #637988;
-}
-
-.menu-box__subheader {
-    list-style: none;
-    margin-left: -10px;
-    margin-bottom: 29.5px;
-}
-
-.menu-box__item {
-    display: block;
-    font-size: 20px;
-    text-decoration: none;
-    color: $color_white;
-    margin-bottom: 7px;
-
-    &_large {
-        font-size: 26px;
+    &__header {
+        margin-left: 29.5px;
+        margin-bottom: 15px;
+        font-size: 20px;
+        font-weight: normal;
+        color: #637988;
     }
 
-    &_select {
-        color: $color_blue;
+    &__subheader {
+        list-style: none;
+        margin-left: -10px;
+        margin-bottom: 29.5px;
     }
-}
 
-.menu-box__item:hover {
-    background-color: #CFD8DC;
+    &__item {
+        display: block;
+        font-size: 20px;
+        text-decoration: none;
+        color: $color_white;
+        margin-bottom: 7px;
+    
+        &_large {
+            font-size: 26px;
+        }
+    
+        &_select {
+            color: $color_blue;
+        }
+
+        &:hover {
+            background-color: #CFD8DC;
+        }
+    }
 }
 
 @media (max-width: 650px) {

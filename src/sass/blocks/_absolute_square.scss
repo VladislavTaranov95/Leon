@@ -1,6 +1,10 @@
 .figures {
     position: relative;
 
+    @media (max-width: 1500px) {
+        display: none;
+    }
+
     &__services-absolute-square {
         position: absolute;
         right: 44px;
@@ -16,22 +20,15 @@
     &_about {
         width: 470px;
         text-align: right;
+
+        @media (max-width: 1500px) {
+            display: none;
+        }
     }
 
     &_about {
         position: relative;
         width: 50%;
         padding-right: 124px;
-    }
-}
-
-@media (max-width: 1500px) {
-
-    .figures {
-        display: none;
-
-        &_about {
-            display: none;
-        }
     }
 }
