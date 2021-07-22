@@ -5,6 +5,7 @@ const cleanCSS = require('gulp-clean-css');
 const autoprefixer = require('gulp-autoprefixer');
 const rename = require("gulp-rename");
 const htmlmin = require('gulp-htmlmin');
+const pug = require('gulp-pug');
 
 gulp.task('server', function () {
 
@@ -35,16 +36,17 @@ gulp.task('styles', function () {
 });
 
 gulp.task('html', function () {
-    return gulp.src("src/*.html")
-        .pipe(htmlmin({
-            collapseWhitespace: true
+    return gulp.src("src/*.pug")
+        .pipe(pug({
+            doctype: 'html',
+            pretty: false
         }))
         .pipe(gulp.dest("dist/"));
 });
 
 gulp.task('watch', function () {
     gulp.watch("src/sass/**/*.+(scss|sass|css)", gulp.parallel('styles'));
-    gulp.watch("src/*.html").on('change', gulp.parallel('html'));
+    gulp.watch("src/*.pug").on('change', gulp.parallel('html'));
 })
 
 gulp.task('js', function () {

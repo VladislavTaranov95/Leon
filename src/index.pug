@@ -1,0 +1,182 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='preconnect' href='https://fonts.gstatic.com')
+  link(href='https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;800&display=swap' rel='stylesheet')
+  link(rel='stylesheet' type='text/css' href='css/style.min.css')
+  title Document
+header.header
+  .container
+    .logos
+      a.logos__mainlogo(href='#')
+        img(src='icons/logo.png' alt='')
+      .logo__menu
+        input#menu__toggle(type='checkbox')
+        label.menu__btn(for='menu__toggle')
+          span
+        ul.menu-box
+          li
+            .menu-box__header Menu
+            ul.menu-box__subheader
+              li
+                a.menu-box__item.menu-box__item_large.menu-box__item_select(href='#') Home
+              li
+                a.menu-box__item.menu-box__item_large(href='#') Services
+              li
+                a.menu-box__item.menu-box__item_large(href='#') Portfolio
+              li
+                a.menu-box__item.menu-box__item_large(href='#') About
+          li
+            .menu-box__header Get In Touch
+            ul.menu-box__subheader
+              li
+                a.menu-box__item(href='#') Contact Me
+          li
+            .menu-box__header Get Social
+            ul.menu-box__subheader
+              li
+                a.menu-box__item(href='#') Behance
+              li
+                a.menu-box__item(href='#') Dribble
+              li
+                a.menu-box__item(href='#') Twitter
+section.promo
+  .container
+    .promo__header Hello There!
+    .promo__subheader We are Leon - Super Creative &amp; Minimal Agency Web Template
+section.reasons
+  .reason
+    .reason-item
+      .reason-item__logo
+        img(src='icons/lamp.png' alt='')
+      .reason-item__header Tell Us Your Idea
+      .reason-item__subheader
+        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        | eiusmod tempor incididunt ut lab
+  .reason.reason_shadow
+    .reason-item
+      .reason-item__logo
+        img(src='icons/khim.png' alt='')
+      .reason-item__header We Will Do All The W&ocy;rk
+      .reason-item__subheader
+        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        | eiusmod tempor incididunt ut lab
+  .reason
+    .reason-item
+      .reason-item__logo
+        img(src='icons/globe.png' alt='')
+      .reason-item__header Your Product is Worldwide
+      .reason-item__subheader
+        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        | eiusmod tempor incididunt ut lab
+section.services
+  .container
+    .logo
+      | services
+    h2.services__header Don&apos;t be busy, be productive
+    .services__wrapper
+      .services__items
+        .item
+          .item__icon
+            img(src='icons/services/logo_print.png' alt='')
+          .item__content
+            .item__header Graphic Design
+            .item__text
+              | Graphic design is the process of visual communication and
+              | problem-solving using one or more of typography, photography and illustration.
+        .item
+          .item__icon
+            img(src='icons/services/logo_win.png' alt='')
+          .item__content
+            .item__header Web Design
+            .item__text
+              | Web design encompasses many different skills and disciplines in the
+              | production and maintenance of websites.
+        .item
+          .item__icon
+            img(src='icons/services/logo_win.png' alt='')
+          .item__content
+            .item__header UI &amp; UX
+            .item__text
+              | Process of enhancing user satisfaction
+              | with a product by improving the
+              | usability, accessibility, and pleasure
+              | provided in the interaction.
+        .item
+          .item__icon
+            img(src='icons/services/logo_win.png' alt='')
+          .item__content
+            .item__header Web Development
+            .item__text
+              | Web development is a broad term for
+              | the work involved in developing a web site
+              | for the Internet or an intranet.
+      .figures
+        img.figures__services-absolute-square(src='img/services/figures/big_square.png' alt='')
+        img(src='img/services/figures/tall_square.png' alt='')
+section.portfolio
+  .container
+    .logo
+      | portfolio
+    .portfolio__header If you do it right, it will last forever.
+  .portfolio__cards
+    .card
+      .card__img
+      .card__content
+        .card__header Project Here
+        .card__subheader
+          | My creative ability is very difficult to measure because it can manifest in so many surprising
+          | and.
+    .card.card_margin
+      .card__img
+      .card__content
+        .card__header Project Here
+        .card__subheader
+          | My creative ability is very difficult to measure because it can manifest in so many surprising
+          | and.
+    .card
+      .card__img
+      .card__content
+        .card__header Project Here
+        .card__subheader
+          | My creative ability is very difficult to measure because it can manifest in so many surprising
+          | and.
+section.about
+  .container
+    .logo
+      | about
+    .about__header Less is more work
+    .about__content
+      .about__wrapper
+        .figures_about
+          img(src='img/about/symbol_l.png' alt='')
+          img.figures__about-absolute-square(src='img/services/figures/big_square.png' alt='')
+        .about__text-content
+          .about__text.about__text_bold
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            | labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            | laboris nisi ut aliqui
+          hr.line.line_blue
+          .about__text
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            | labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            | laboris nisi ut aliqu
+section.contact
+  .container
+    .logo
+      | contact
+    .contact__header We are born to create
+    .contact__text Feel free to drop us a line at:
+    .contact__text_blue leonagency@mail.com
+    .social-networks
+      .social-networks__text Find us on social networks:
+      img(src='img/contact/social/google.png' alt='')
+      img(src='img/contact/social/dribble.png' alt='')
+      img(src='img/contact/social/twitter.png' alt='')
+footer.footer
+  .footer__content
+    | &copy; 2019 - 
+    span Leon
+    | ,All Right Reserved
